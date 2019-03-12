@@ -20,13 +20,6 @@ def fix_buffer(dic, key):
             return
 
 
-def draw_circle(event, x, y, flags, param):
-    global waiting, org_frame
-    if event == cv2.EVENT_LBUTTONDOWN:
-        memory_buffer[str((x, y))] = org_frame
-        waiting = False
-
-
 def track_ball(file):
     global memory_buffer, waiting, org_frame
     memory_buffer = {}
