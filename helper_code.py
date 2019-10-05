@@ -3,9 +3,9 @@ import numpy as np
 import hashlib
 
 def rewind(file, frame_number):
-    i = 0
+    i = 1
     cap = cv2.VideoCapture(file)
-    if frame_number <= 0:
+    if frame_number <= 1:
         return cap
     while cap.isOpened() and frame_number != i:
         cap.read()
