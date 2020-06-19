@@ -19,6 +19,14 @@ Use the python package manager [pip](https://pip.pypa.io/en/stable/) to install 
 pip install -r requirements.txt
 ```
 
+If you get this error while running `pip install`
+
+```py
+ImportError: libtk8.6.so: cannot open shared object file: No such file or directory
+```
+
+Check this - https://stackoverflow.com/a/48505199
+
 ## Technologies Used
 - Numpy
 - OpenCV
